@@ -1,4 +1,7 @@
 <%- include('partials/header')-%>
-<h1><%=header%></h1>
+<form action="/post/<%=header%>" method="post">
+<h1 name="title"><%=header%></h1>
 <p><%=content%></p>
+    <button type="submit" class="btn btn-primary" style="margin-top: 10px;">EDIT</button>
+</form>
 <%- include('partials/footer')-%>

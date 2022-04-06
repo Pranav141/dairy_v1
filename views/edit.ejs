@@ -1,0 +1,16 @@
+<%- include('partials/header')-%>
+<h1><%=header%></h1>
+<form action="/edit/<%=header%>" method="post">
+
+    <!-- <div class="mb-3">
+        <label for="FormControlInput1" class="form-label">Title</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Title" name="title">
+      </div> -->
+      <div class="mb-3">
+        <label for="FormControlTextarea1" class="form-label">Create Blog</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Write here." name="blog"><%=content%></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary" style="margin-top: 10px;">Save</button>
+</form>
+
+<%- include('partials/footer')-%>
